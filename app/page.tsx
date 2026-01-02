@@ -1,4 +1,3 @@
-import { BlogPosts } from 'app/components/posts'
 import GitHubContributions from 'app/components/github-contributions'
 
 function ArrowIcon() {
@@ -32,7 +31,7 @@ export default function Page() {
       </p>
 
       {/* Resume Section */}
-      <div className="my-8">
+      <div id="resume" className="my-8 scroll-mt-20">
         <h2 className="mb-4 text-xl font-semibold tracking-tighter">Resume</h2>
         <a
           href="/resume.pdf"
@@ -46,7 +45,7 @@ export default function Page() {
       </div>
 
       {/* Projects Section */}
-      <div className="my-8">
+      <div id="projects" className="my-8 scroll-mt-20">
         <h2 className="mb-4 text-xl font-semibold tracking-tighter">Featured Projects</h2>
         <div className="flex flex-col gap-4">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all">
@@ -101,7 +100,7 @@ export default function Page() {
       </div>
 
       {/* GitHub Activity Section */}
-      <div className="my-8">
+      <div id="github" className="my-8 scroll-mt-20">
         <h2 className="mb-4 text-xl font-semibold tracking-tighter">GitHub Activity</h2>
         <p className="mb-4 text-sm text-neutral-600 dark:text-neutral-400">
           Contributions across personal and work accounts, aggregated using GitHub's GraphQL API.
@@ -122,12 +121,43 @@ export default function Page() {
             days={365}
           />
         </div>
-      </div>
 
-      {/* Blog Section */}
-      <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold tracking-tighter">Blog Posts</h2>
-        <BlogPosts />
+        <div className="flex flex-col gap-4 mt-4">
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all">
+            <a
+              href="https://github.com/j-romo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2"
+            >
+              <ArrowIcon />
+              <div className="flex-1">
+                <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">Personal GitHub: j-romo</h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
+                  My personal GitHub profile showcasing my projects, contributions, and open source work.
+                </p>
+              </div>
+            </a>
+          </div>
+        
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all">
+            <a
+              href="https://github.com/jromo-mdb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2"
+            >
+              <ArrowIcon />
+              <div className="flex-1">
+                <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">Work GitHub: jromo-mdb</h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
+                  My MongoDB work GitHub profile showcasing my projects, contributions, and open source work to the documentation for MongoDB Atlas.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   )

@@ -167,20 +167,7 @@ export default async function GitHubContributions({
         </div>
         <span>More</span>
       </div>
-
-      {/* Implementation Note - Remove this in production */}
-      <details className="text-xs text-neutral-500 dark:text-neutral-600">
-        <summary className="cursor-pointer hover:text-neutral-700 dark:hover:text-neutral-400">
-          Technical Implementation
-        </summary>
-        <div className="mt-2 space-y-1 pl-4">
-          <p>✓ Next.js Server Component</p>
-          <p>✓ GitHub GraphQL API integration</p>
-          <p>✓ ISR with 1-hour revalidation</p>
-          <p>✓ Multi-account aggregation</p>
-          <p>✓ TypeScript type safety</p>
-        </div>
-      </details>
+      
     </div>
   );
 }

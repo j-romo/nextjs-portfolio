@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
