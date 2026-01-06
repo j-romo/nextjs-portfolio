@@ -17,8 +17,18 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+    <footer id="contact" className="mb-16 scroll-mt-20">
+      <h2 className="mb-4 text-xl font-semibold tracking-tighter">Contact</h2>
+      <ul className="font-sm flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            href="mailto:joaquin@devportals.tech"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">Email</p>
+          </a>
+        </li>
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"

@@ -13,6 +13,9 @@ const navItems = {
   '#github': {
     name: 'github',
   },
+  '#contact': {
+    name: 'contact',
+  },
   'https://devportals.tech/blog': {
     name: 'blog ↗',
   },
